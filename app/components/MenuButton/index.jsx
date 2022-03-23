@@ -1,8 +1,8 @@
 import React from "react";
 
-const MenuButton = () => {
+const MenuButton = props => {
   return (
-    <button className="sidebar-toggle">
+    <button onClick={props.handleClick} className="sidebar-toggle">
       <i className="fas fa-bars"></i>
     </button>
   );
