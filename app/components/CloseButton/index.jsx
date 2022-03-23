@@ -1,8 +1,8 @@
 import React from "react";
 
-const CloseButton = () => {
+const CloseButton = props => {
   return (
-    <button className="close-btn">
+    <button onClick={props.handleClick} className="close-btn">
       <i className="fas fa-times"></i>
     </button>
   );
