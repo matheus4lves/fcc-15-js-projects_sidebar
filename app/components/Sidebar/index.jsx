@@ -10,6 +10,7 @@ const Sidebar = props => {
     <aside className={props.className}>
       <header className="sidebar-header">
         <img src="../../assets/images/logo.svg" alt="" className="logo" />
+        <CloseButton handleClick={props.handleClick} />
       </header>
       <SidebarContent />
       <SocialMediaLinks />
