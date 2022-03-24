@@ -5,12 +5,11 @@ import CloseButton from "../CloseButton";
 import SidebarContent from "./SidebarContent";
 import SocialMediaLinks from "../SocialMediaLinks";
 
-const Sidebar = () => {
+const Sidebar = props => {
   return (
-    <aside className="sidebar">
+    <aside className={props.className}>
       <header className="sidebar-header">
         <img src="../../assets/images/logo.svg" alt="" className="logo" />
-        <CloseButton />
       </header>
       <SidebarContent />
       <SocialMediaLinks />
